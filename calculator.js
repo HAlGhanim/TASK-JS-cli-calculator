@@ -5,19 +5,12 @@ const prompt = require("prompt-sync")(); // Please don't touch me :)
 // const name = prompt("What's your name? ");
 // console.log(`Hi, I'm ${name}.`);
 
-let firstNumber = 0;
-let secondNumber = 0;
-let operator = "operation symbol";
-
 const fNumber = prompt("Please enter the first number: ")
 const sNumber = prompt("Please enter the second number: ")
 const op = prompt("Please choose the operation (+, -, /, *): ")
 
-firstNumber = fNumber;
-secondNumber = sNumber;
-operator = op;
 
-if (isNaN(firstNumber) || isNaN(secondNumber)){
+if (isNaN(fNumber) || isNaN(sNumber)){
     console.log("the numbers were invalid");  
 }
 else {
